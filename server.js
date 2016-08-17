@@ -5,8 +5,6 @@ var mysql = require('mysql'); // node-mysql module
 var bodyParser = require('body-parser');
 
 var moment = require('moment');
-// var bcrypt = require('bcryptjs'); // to encode passwords
-
 var urlencodedParser = bodyParser.urlencoded({
   extended: false
 });
