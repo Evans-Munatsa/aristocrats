@@ -1,0 +1,19 @@
+{
+  "name": "aristocrats",
+  "version": "1.0.0",
+  "description": "The Codex Academy heckathon for Uber5 authentication application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Evans-Munatsa/aristocrats.git"
+  },
+  "author": "Evans Munatsa, Samantha Hoy, Lolito, Likhona",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Evans-Munatsa/aristocrats/issues"
+  },
+  "homepage": "https://github.com/Evans-Munatsa/aristocrats#readme"
+}
