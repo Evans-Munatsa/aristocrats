@@ -52,6 +52,8 @@ app.get('/', function(req, res) {
 })
 
 app.get('/patients', patients.show);
+app.get('/patients/add', patients.showAdd);
+app.post('/patients/add', patients.add);
 
 // start the server
 var server = app.listen(3000, function() {
