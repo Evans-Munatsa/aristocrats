@@ -57,5 +57,5 @@ app.get('/patients/add', patients.showAdd);
 app.post('/patients/add', patients.add);
 
 // start the server
-var server = app.listen(3000, '45.55.53.71');
+var server = app.listen(3000);
 
