@@ -1,56 +1,43 @@
-<!-- <h1>patients</h1>
+<div class="container">
+  <h2>Patient's Medical Records</h2>
+  <!-- <p>The .table class adds basic styling (light padding and only horizontal dividers) to a table:</p> -->
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+        <th>ID Number </th>
+        <th>Address  </th>
+        <th>Phone Number </th>
+        <th>Admin Rights</th>
+        <th>Doctor's ID</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Moses</td>
+        <td>Mc Gregor</td>
+        <td>moses@example.com</td>
+        <td>9976266251876</td>
+        <td>21 B/Carfax Stree/ Rundter/ 8872</td>
+        <td>071 889 2232</td>
+        <td>Patient</td>
+        <td>DRL-2112-121CX</td>
+      </tr>
+      <!-- <tr>
+        <td>Mindy</td>
+        <td>Kaling</td>
+        <td>mindy@example.com</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr> -->
+    </tbody>
+  </table>
+</div>
 
-
-{{#patients}}
-  <h4>first name: {{first_name}}</h4>
-  <p>Surname: {{surname}}</p>
-  <p>ID number: {{id_no}}</p>
-  <p>Mobile number: {{mobile_no}}</p>
-  <p>Email: {{email}}</p>
-  <p>Physical address: {{physical_address}}</p>
-  <p>Doctor id: {{doc_id}}</p>
-  <hr>
-{{/patients}}
-
-{{#no_patients}}
-  <p>No patients available yet. Add some above.</p>
-{{/no_patients}}
- -->
-
- <div class="container">
-   <h2>Patient's Medical Records</h2>
-   <!-- <p>The .table class adds basic styling (light padding and only horizontal dividers) to a table:</p> -->
-   <table class="table">
-     <thead>
-       <tr>
-         <th>Firstname</th>
-         <th>Lastname</th>
-         <th>Phone Number </th>
-         <th>ID Number </th>
-         <th>Email</th>
-         <th>Address  </th>
-         <th>Doctor's ID</th>
-         <th></th>
-       </tr>
-     </thead>
-     <tbody>
-       {{#patients}}
-       <tr>
-         <td>{{first_name}}</td>
-         <td>{{surname}}</td>
-         <td>{{mobile_no}}</td>
-         <td>{{id_no}}</td>
-         <td>{{email}}</td>
-         <td>{{physical_address}}</td>
-         <td>{{doc_id}}</td>
-         <td><a href="/script_items" type="button" class="btn btn-primary btn-block">Create Script</a></td>
-       </tr>
-       {{/patients}}
-     </tbody>
-   </table>
-
-   {{#no_patients}}
-     <p>No patients available yet. Add some above.</p>
-   {{/no_patients}}
-
- </div>
+<button type="button" class="btn btn-primary btn-block">Create Script</button>
