@@ -29,8 +29,8 @@ exports.add = function (req, res, next) {
 	req.getConnection(function(err, connection){
 		if (err) return next(err);
 		var data = {
-			med_name : req.body.med_name,
-      		quantity : Number(req.body.quantity)
+		     	med_name: req.body.med_name,
+      		quantity: Number(req.body.quantity)
 			// Price : Number(req.body.Price)
   		};
 

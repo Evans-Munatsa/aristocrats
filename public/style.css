@@ -24,7 +24,10 @@ body{
 @import url(http://fonts.googleapis.com/css?family=Doppio+One);
 
 a:link, a:visited {
-	color:black;
+	color:white;
+}
+#displayOTP{
+  font-size: 25px;
 }
 .jumbotron{
   height: 100%;
@@ -38,8 +41,10 @@ a:link, a:visited {
 #Heading{
   text-align: center;
   font-family: sans-serif;
-  color : red;
+  color : green;
+  font-size: 18px;
 }
+
 #heading2{
   font-family: sans-serif;
   background-color: green;
@@ -50,6 +55,17 @@ a:link, a:visited {
 .para {
   font-family: sans-serif;
 }
+#codeButton{
+  float: right;
+}
+#ImageDiv{
+  text-align: center;
+}
+h1{
+  text-align: center;
+
+}
+
 
 .navbar .brand {
 max-height: 70px;
