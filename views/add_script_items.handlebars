@@ -1,0 +1,36 @@
+
+<h1>Add Medicine</h1>
+
+<form action="/routes/add_script_items" method="POST">
+
+	<div class="form-group">
+		<!-- <label for="des">Medicine Name</label>
+		<input type="text" class="form-control" id="pwd" name="med_name" value="{{med_name}}"> -->
+
+		<div class="dropdown">
+			<label for="des">Medicine</label>
+
+			<select class="form-control" id="sel1">
+						<option>Grand Pa</option>
+						<option>Panado</option>
+						<option>Disprin</option>
+						<option>Medlemon</option>
+					</select>
+</div>
+
+	</div>
+	<div class="form-group">
+		<label for="des">Quantity</label>
+		<div class="dropdown">
+			<select class="form-control" id="sel1">
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+					</select>
+</div>
+	</div>
+
+
+	<button type="submit" class="btn btn-default">Create Script</button>
+</form>

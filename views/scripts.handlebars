@@ -1,0 +1,24 @@
+<div class="container">
+  <h2>Scripts</h2>
+  <!-- <p>The .table class adds basic styling (light padding and only horizontal dividers) to a table:</p> -->
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Scrip ID</th>
+        <th>Patient ID</th>
+        <th>Script Time Stamp</th>
+        <th>OTP</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#scripts}}
+      <tr>
+        <td>{{script_id }}</td>
+        <td>{{patient_id}}</td>
+        <td>{{script_datetimestamp}}</td>
+        <td id="otpNumber"><span style="color:green">{{script_otp}}</span></td>
+      </tr>
+      {{/scripts}}
+    </tbody>
+  </table>
+</div>

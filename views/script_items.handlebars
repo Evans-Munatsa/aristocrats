@@ -1,0 +1,42 @@
+<div id="csricodexmlab" class="container-fluid bg-3 text-center jumbotron">
+  <h1 class="margin">Script Item</h1>
+</div>
+
+<div id="output">
+
+<h2>{{first_name}} {{surname}}</h2>
+<h2>{{patient_id}}</h2>
+<p>
+  <a style="color:white" class="btn btn-success btn-lg" href="/script_items/add">
+    <span class="glyphicon glyphicon-plus"></span> Add Medication
+  </a>
+</p>
+
+  <div>
+    <table style="width:100%" class="table table-hover">
+      <thead>
+      <tr id="Heading">
+        <!-- <th>Main ID Number</th> -->
+        <th>Medicine Name</th>
+        <th>Quantity</th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+      <tr>
+        {{#script_items}}
+        <!-- <th id="des" class="info"><span style="color:#ffb900">ID#</span> : {{id}}</th> -->
+
+        <th id="des" class="info">{{med_name}}</th>
+        <th id="des" class="info">{{quantity}}</th>
+        <td class="para"><strong><span style="color:#00adc8"><a type="button" class="btn btn-raised btn-warning" href="/script_items/edit/{{script_items_id}}">
+      <span class="glyphicon glyphicon-edit"></span> Edit
+    </a></span></strong></td>
+
+        <td class="para"><a type="button" class="btn btn-danger" href="/script_items/delete/{script_items_id}">
+      <span class="glyphicon glyphicon-trash"></span> Delete
+    </a></td>
+  </tr>{{/script_items}}
+    </table>
+  </div>
+</div>

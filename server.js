@@ -4,6 +4,8 @@ var session = require('express-session'); // used for HTTP authentication and au
 var mysql = require('mysql'); // node-mysql module
 var bodyParser = require('body-parser');
 var patients = require('./routes/patients');
+var scripts = require('./routes/scripts');
+var script_items = require('./routes/script_items');
 
 var moment = require('moment');
 var urlencodedParser = bodyParser.urlencoded({
@@ -18,7 +20,7 @@ var myConnection = require('express-myconnection'); // express-myconnection modu
 var dbOptions = {
   host: 'localhost',
   user: 'root',
-  password: 'root',
+  password: 'Leander247365',
   port: 3306,
   database: 'doctors_orders'
 };
@@ -52,6 +54,12 @@ app.get('/', function(req, res) {
 })
 
 app.get('/patients', patients.show);
+app.get('/scripts', scripts.show);
+app.get('/script_items', script_items.show);
+app.get('/script_items/add', script_items.showAdd);
+app.post('/script_items/add_script_items', script_items.add);
+
+
 
 // start the server
 var server = app.listen(3000, function() {
