@@ -8,6 +8,7 @@ var scripts = require('./routes/scripts');
 var script_items = require('./routes/script_items');
 var display_otp = require('./routes/display_otp');
 
+
 var moment = require('moment');
 var urlencodedParser = bodyParser.urlencoded({
   extended: false
@@ -21,7 +22,7 @@ var myConnection = require('express-myconnection'); // express-myconnection modu
 var dbOptions = {
   host: 'localhost',
   user: 'root',
-  password: 'Leander247365',
+  password: 'root',
   port: 3306,
   database: 'doctors_orders'
 };
@@ -40,14 +41,6 @@ app.use(bodyParser.urlencoded({
   // parse application/json
 app.use(bodyParser.json())
 
-//set up HttpSession middleware
-app.use(session({
-  secret: 'my fortune cookie',
-  cookie: {
-    // maxAge: 60000
-    maxAge: 600000
-  }
-}));
 
 
 app.get('/', function(req, res) {
@@ -62,10 +55,9 @@ app.get('/script_items/add', script_items.showAdd);
 app.post('/script_items/add_script_items', script_items.add);
 
 
+app.get('/patients/add', patients.showAdd);
+app.post('/patients/add', patients.add);
 
 // start the server
-var server = app.listen(3000, function() {
-  var host = server.address().address;
-  var port = server.address().port;
-  console.log('Server app listening at http://%s:%s', host, port);
-});
+var server = app.listen(3000);
+
