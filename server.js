@@ -4,6 +4,7 @@ var session = require('express-session'); // used for HTTP authentication and au
 var mysql = require('mysql'); // node-mysql module
 var bodyParser = require('body-parser');
 var patients = require('./routes/patients');
+var http = require('http');
 
 var moment = require('moment');
 var urlencodedParser = bodyParser.urlencoded({
@@ -56,8 +57,5 @@ app.get('/patients/add', patients.showAdd);
 app.post('/patients/add', patients.add);
 
 // start the server
-var server = app.listen(3000, function() {
-  var host = server.address().address;
-  var port = server.address().port;
-  console.log('Server app listening at http://%s:%s', host, port);
-});
+var server = app.listen(3000, '45.55.53.71');
+
