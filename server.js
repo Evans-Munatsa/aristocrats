@@ -40,14 +40,6 @@ app.use(bodyParser.urlencoded({
   // parse application/json
 app.use(bodyParser.json())
 
-//set up HttpSession middleware
-app.use(session({
-  secret: 'my fortune cookie',
-  cookie: {
-    // maxAge: 60000
-    maxAge: 600000
-  }
-}));
 
 
 app.get('/', function(req, res) {
