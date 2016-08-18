@@ -32,6 +32,9 @@ a:link, a:visited {
 .jumbotron{
   height: 100%;
 }
+#theButton{
+  float: right;
+}
 
 #heading{
   text-align: center;
@@ -43,6 +46,9 @@ a:link, a:visited {
   font-family: sans-serif;
   color : green;
   font-size: 18px;
+}
+#output{
+  padding: 10px;
 }
 
 #heading2{
