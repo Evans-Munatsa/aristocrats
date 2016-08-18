@@ -1,0 +1,17 @@
+<h1>patients</h1>
+
+
+{{#patients}}
+  <h4>first name: {{first_name}}</h4>
+  <p>Surname: {{surname}}</p>
+  <p>ID number: {{id_no}}</p>
+  <p>Mobile number: {{mobile_no}}</p>
+  <p>Email: {{email}}</p>
+  <p>Physical address: {{physical_address}}</p>
+  <p>Doctor id: {{doc_id}}</p>
+  <hr>
+{{/patients}}
+
+{{#no_patients}}
+  <p>No patients available yet. Add some above.</p>
+{{/no_patients}}
