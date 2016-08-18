@@ -3,6 +3,7 @@ var exphbs = require('express-handlebars');
 var session = require('express-session'); // used for HTTP authentication and authorisation
 var mysql = require('mysql'); // node-mysql module
 var bodyParser = require('body-parser');
+var patients = require('./routes/patients');
 
 var moment = require('moment');
 var urlencodedParser = bodyParser.urlencoded({
@@ -17,9 +18,9 @@ var myConnection = require('express-myconnection'); // express-myconnection modu
 var dbOptions = {
   host: 'localhost',
   user: 'root',
-  password: 'admin',
+  password: 'root',
   port: 3306,
-  database: 'nelisa'
+  database: 'doctors_orders'
 };
 var showNavBar = true;
 
@@ -55,6 +56,8 @@ app.use(session({
 app.get('/', function(req, res) {
     res.render('home')
 })
+
+app.get('/patients', patients.show);
 
 // // Route specific middleware allows you to add middleware components onto routes.
 // var checkUser = function(req, res, next) {
