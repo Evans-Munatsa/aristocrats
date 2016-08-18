@@ -6,6 +6,7 @@ var bodyParser = require('body-parser');
 var patients = require('./routes/patients');
 var scripts = require('./routes/scripts');
 var script_items = require('./routes/script_items');
+var display_otp = require('./routes/display_otp');
 
 var moment = require('moment');
 var urlencodedParser = bodyParser.urlencoded({
@@ -54,6 +55,7 @@ app.get('/', function(req, res) {
 })
 
 app.get('/patients', patients.show);
+app.get('/display_otp', display_otp.show);
 app.get('/scripts', scripts.show);
 app.get('/script_items', script_items.show);
 app.get('/script_items/add', script_items.showAdd);
