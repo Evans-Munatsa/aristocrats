@@ -55,6 +55,7 @@ app.get('/scripts', scripts.show);
 app.get('/script_items', script_items.show);
 app.get('/script_items/add', script_items.showAdd);
 app.post('/script_items/add_script_items', script_items.add);
+app.get('/script_items/delete/:script_items_id', script_items.delete);
 
 
 app.get('/patients/add', patients.showAdd);

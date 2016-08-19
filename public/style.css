@@ -15,7 +15,10 @@ body{
 #otpNumber{
   font-size: 25px;
 }
-
+#sendButton{
+  text-align: center;
+  padding: 20px;
+}
 .navbar-brand>img {
   height: 100%;
   padding: 15px;

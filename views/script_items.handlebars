@@ -33,7 +33,7 @@
       <span class="glyphicon glyphicon-edit"></span> Edit
     </a></span></strong></td>
 
-        <td class="para"><a type="button" class="btn btn-danger" href="/script_items/delete/{script_items_id}">
+        <td class="para"><a type="button" class="btn btn-danger" href="/script_items/delete/{{script_items_id}}">
       <span class="glyphicon glyphicon-trash"></span> Delete
     </a></td>
   </tr>{{/script_items}}
@@ -41,9 +41,9 @@
   </div>
   <p>
 
-    <form  class="" action="/send_otp" method="post" id="theButton">
-      <input type="submit" class="btn btn-success btn-lg" name="name" value="Send Script-OTP to patient">
-    </form>
+      <form  id="sendButton" class="" action="/send_otp" method="post" id="theButton">
+        <input type="submit" class="btn btn-success btn-lg" name="name" value="Send Script-OTP to patient">
+      </form>
 
 
   </p>

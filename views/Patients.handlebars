@@ -15,29 +15,25 @@
       </tr>
     </thead>
     <tbody>
+      {{#patients}}
       <tr>
-        <td>Moses</td>
-        <td>Mc Gregor</td>
-        <td>moses@example.com</td>
-        <td>9976266251876</td>
-        <td>21 B/Carfax Stree/ Rundter/ 8872</td>
-        <td>071 889 2232</td>
-        <td>Patient</td>
-        <td>DRL-2112-121CX</td>
+        <td>{{first_name}}</td>
+        <td>{{surname}}</td>
+        <td>{{email}}</td>
+        <td>{{id_no}}</td>
+        <td>{{physical_address}}</td>
+        <td>{{mobile_no}}</td>
+        <td><span style="color: red">Patient</span></td>
+        <td>{{doc_id}}</td>
       </tr>
-      <!-- <tr>
-        <td>Mindy</td>
-        <td>Kaling</td>
-        <td>mindy@example.com</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>July</td>
-        <td>Dooley</td>
-        <td>july@example.com</td>
-      </tr> -->
+      {{/patients}}
     </tbody>
   </table>
+
+  {{#no_patients}}
+    <p>No patients available yet. Add some above.</p>
+  {{/no_patients}}
+
 </div>
 
 <button type="button" class="btn btn-primary btn-block">Create Script</button>
