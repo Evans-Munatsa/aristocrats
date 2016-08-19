@@ -23,7 +23,7 @@ var myConnection = require('express-myconnection'); // express-myconnection modu
 var dbOptions = {
   host: 'localhost',
   user: 'root',
-  password: 'Leander247365',
+  password: 'root',
   port: 3306,
   database: 'doctors_orders'
 };
