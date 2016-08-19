@@ -1,0 +1,50 @@
+<div class="container">
+   <h2>Patient's Medical Records</h2>
+   <!-- <p>The .table class adds basic styling (light padding and only horizontal dividers) to a table:</p> -->
+   <table class="table">
+     <thead>
+       <tr>
+         <th></th>
+       </tr>
+     </thead>
+     <tbody>
+       {{#patients}}
+       <tr>
+         <th>Firstname</th>
+         <td>{{first_name}}</td>
+      </tr>
+      <tr>
+         <th>Lastname</th>
+         <td>{{surname}}</td>
+      </tr>
+      <tr>
+         <th>Phone Number </th>
+         <td>{{mobile_no}}</td>
+      </tr>
+      <tr>
+         <th>ID Number </th>
+         <td>{{id_no}}</td>
+      </tr>
+      <tr>
+         <th>Email</th>
+         <td>{{email}}</td>
+      </tr>
+      <tr>
+         <th>Address  </th>
+         <td>{{physical_address}}</td>
+      </tr>
+      <tr>
+         <th>Doctor's ID</th>
+         <td>{{doc_id}}</td>
+      </tr>
+         <td><a href="/script_items" type="button" class="btn btn-primary btn-block">Create Script</a></td>
+       </tr>
+       {{/patients}}
+     </tbody>
+   </table>
+
+   {{#no_patients}}
+     <p>No patients available yet. Add some above.</p>
+   {{/no_patients}}
+
+ </div>
